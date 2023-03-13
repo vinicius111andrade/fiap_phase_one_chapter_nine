@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+body {
+    background-color: #e8fdfa;
+    
+}
+
+
+nav{
+    margin:0;
+    padding:0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-image: linear-gradient(to left, #F2DCE4, #FFFFFF, #FFFFFF );
+    box-sizing: border-box;
+}
+
+#FormDiv{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.FormLine{
+    width: 100vh;
+    margin-bottom: 1vh;
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.LabelDiv{
+    display: flex;
+    flex-direction: column;   
+}
+
+#WhiteBox{
+    background-color: #FFFFFF;
+    padding-left: 2vh;
+    padding-right: 2vh;    
+    padding-bottom: 1vh;
+    padding-top: 0.5px;
+    border-radius: 2vh;
+}
+
+/* 
+
+.FormLine2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.FormLine3{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ */
