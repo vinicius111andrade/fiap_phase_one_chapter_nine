@@ -1,4 +1,4 @@
-.people_container {
+.people_container, .content_container {
     width: 100%;
     display: inline-block;
 }
