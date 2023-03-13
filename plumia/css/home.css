@@ -1,0 +1,18 @@
+.people_container {
+    width: 100%;
+    display: inline-block;
+}
+
+.person {
+    text-align: center;
+    display: inline-block;
+}
+
+.person_name {
+    text-decoration: none;
+}
+
+.clickable_icon {
+    width: 35px;
+    height: 35px;
+}
