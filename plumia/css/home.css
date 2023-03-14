@@ -16,3 +16,11 @@
     width: 35px;
     height: 35px;
 }
+
+.intro_text {
+    margin: 64px;
+}
+
+.intro_image {
+    margin: 24px;
+}
