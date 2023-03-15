@@ -91,7 +91,7 @@ a:hover{
     border-collapse: collapse;
   }
 
-  caption {
+  caption, .table-title {
     font-size: 30px;
     color: #7EADBF;
     text-align: center;
@@ -99,11 +99,7 @@ a:hover{
     margin-bottom: 10px;
   }
 
-  thread tr {
-    background: #7EADBF;
-    color: #fff;
-    text-align: left;
-  }
+
 
   th, td {
     padding: 15px;
@@ -114,8 +110,4 @@ a:hover{
     border-bottom: 1px solid #ccc;
   }
 
-  tbody tr:hover {
-    font-weight: 900;
-    color: #7EADBF;
-    cursor: pointer;
-  }
+ 
