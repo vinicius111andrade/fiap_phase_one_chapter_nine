@@ -14,7 +14,7 @@
 
 	<body>
 
-        <header>
+        <header id="header">
             <img src="../images/Logo.png" alt="logo image">
 
             <nav>
@@ -50,12 +50,11 @@
             úteis, Esses sites oferecem uma lista de profissionais qualificados e podem ajudá-lo(a) a 
             encontrar um terapeuta que atenda às suas necessidades:
         </p>
-        <li>
-            <a href="https://eurekka.me/psiquiatra/" target="_blank">"Eurekka"</a>
-        </li>
-        <li>
-            <a href="https://www.psicologiaviva.com.br/" target="_blank">"Psicologia Viva"</a>
-        </li>
+
+        <div class="list_links">
+            <a href="https://eurekka.me/psiquiatra/" target="_blank">Entre em contato com um psiquiatra pelo site: Eurekka</a>
+            <a href="https://www.psicologiaviva.com.br/" target="_blank">Entre em contato com um psicóloga pelo site: Psicologia Viva</a>
+        </div>
 
         <p>
             Queremos que saiba que estamos preocupados com seu bem-estar emocional e estamos sempre disponíveis 
@@ -68,15 +67,17 @@
             <img src="../images/icon_coracao_2.png" alt="Coração sorrindo" height="100" width = "100">
         </h2>
 
-        <div class="botton">
-            <ul class="botoes">
-                <a href="../index.html" ><img class="clickable_icon" src="../images/home.png" height="50" width="150" style="text-align: center"></a>
-                <a href="../index.html" ><img class="clickable_icon" src="../images/refazer_formulario.png" height="50" width="150" style="text-align: center"></a>
-            </ul>
+        <div class="button_container">
+            <div id="buttonline">
+                <a href="../index.html" class="myButton" style="text-align: center">Ir para a Home</a>
+            </div>
+            <div id="buttonline">
+                <a href="../pages/forms_submission.html" class="myButton" style="text-align: center">Refazer formulário</a>
+            </div>
         </div>
 
         <p>
-            <a href="#titulo">Topo da página</a>
+            <a href="#header">Topo da página</a>
         </p>
 
 	</body>

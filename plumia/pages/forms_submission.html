@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    
+    <title>Formulário</title>
+
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/forms_submission.css">
+    <link rel="icon" type="image/png" href="./images/Icon.png"/>
 
     <title>Envio de formulário</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <img src="../images/Logo.png" alt="logo image" height="50px">
 
-            <a class="nav_button" href="../pages/research.html">Pesquisa</a>
-            <a class="nav_button" href="../pages/forms_submission.html">Formulario</a>
+    <header>
+        <img src="../images/Logo.png" alt="logo image">
+
+        <nav>
+            <a class="nav_button" href="../index.html">Home</a>
+            <a class="nav_button" href="./research.html">Pesquisa</a>
         </nav>
     </header>
 
     <h1>Formulário</h1>
-    
+
     <div id="FormDiv">
-       
+
         <form id="Form">
-            
+
             <div class="FormLine">
 
                 <div class="LabelDiv">
@@ -53,32 +58,28 @@
 
             </div>
 
-            <div id="WhiteBox">
-
-                <div class="FormLine">
-                    <div class="LabelDiv">
-                        <label for="Email">Email</label>
-                        <input type="email" placeholder="nome@email.com" class="Textinput" id="Email">
-                    </div>
+            <div class="FormLine">
+                <div class="LabelDiv">
+                    <label for="Email" class="OutWhitebox">Email</label>
+                    <input type="email" placeholder="nome@email.com" class="Textinput" id="Email">
                 </div>
-    
-                <div class="FormLine">
-                    <div class="LabelDiv">
-                        <label for="Country">País</label>
-                        <input type="text" class="Textinput" id="Country">
-                    </div>
-                    <div class="LabelDiv">
-                        <label for="State">Estado</label>
-                        <input type="text" class="Textinput" id="State">
-                    </div>
-                    <div class="LabelDiv">
-                        <label for="City">Cidade</label>
-                        <input type="text" class="Textinput" id="City">
-                    </div>
-                </div>
-
             </div>
-            
+
+            <div class="FormLine">
+                <div class="LabelDiv">
+                    <label for="Country" class="OutWhitebox">País</label>
+                    <input type="text" class="Textinput" id="Country">
+                </div>
+                <div class="LabelDiv">
+                    <label for="State" class="OutWhitebox">Estado</label>
+                    <input type="text" class="Textinput" id="State">
+                </div>
+                <div class="LabelDiv">
+                    <label for="City" class="OutWhitebox">Cidade</label>
+                    <input type="text" class="Textinput" id="City">
+                </div>
+            </div>
+
             <div class="FormLine">
                 <div class="LabelDiv">
                     <label for="Anxiety" class="OutWhitebox">Já foi diagnosticado(a) com algum transtorno de ansiedade? Se sim, qual?</label>
@@ -92,14 +93,14 @@
                     <input type="text" class="Textinput" id="aboutUser">
                 </div>
             </div>
-            
-            <div class="" id="buttonline">
+
+            <div id="buttonline">
                 <a href="../pages/forms_feedback.html" class="myButton">Finalizar</a>
             </div>
-       
+
         </form>
 
     </div>
-        
+
 </body>
 </html>

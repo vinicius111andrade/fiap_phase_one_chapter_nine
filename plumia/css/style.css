@@ -114,3 +114,45 @@ a:hover{
     color: #7F7F7F;
     border-bottom: 1px solid #ccc;
   }
+
+  .myButton {
+	background-color:#7eadbf;
+	border-radius:3px;
+	border:1px solid #000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:13px;
+	padding:10px 23px;
+	text-decoration:none;
+    text-align: center;
+}
+
+.myButton:hover {
+    color: #ffffff;
+	background-color:#7eadbf;
+}
+
+#buttonline{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.button_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.list_links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
