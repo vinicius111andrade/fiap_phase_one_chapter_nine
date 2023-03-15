@@ -14,8 +14,8 @@ p {
 }
 
 h1{
-    color: #B1B0D9;  
-    text-align: center; 
+    color: #B1B0D9;
+    text-align: center;
 }
 
 h2{
@@ -25,6 +25,8 @@ h2{
 p{
     color: #7F7F7F;
     text-indent: 25px;
+    font-size: large;
+    margin: 64px;
 }
 
 li {
@@ -73,7 +75,9 @@ nav{
 }
 
 a {
-    color: #000000;
+    color: #B1B0D9;
+    text-decoration: none;
+    font-weight: 800;
     display: inline-block;
     padding: 10px 15px;
     line-height: 1;
@@ -81,6 +85,42 @@ a {
 }
 
 a:hover{
-    color: #eeeeee;
+    color: #7EADBF;
     text-decoration: underline;
+  }
+
+  table {
+    margin: 64px auto;
+    font-size: 18px;
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  caption {
+    font-size: 30px;
+    color: #7EADBF;
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 10px;
+  }
+
+  thread tr {
+    background: #7EADBF;
+    color: #fff;
+    text-align: left;
+  }
+
+  th, td {
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  tbody tr {
+    border-bottom: 1px solid #ccc;
+  }
+
+  tbody tr:hover {
+    font-weight: 900;
+    color: #7EADBF;
+    cursor: pointer;
   }
