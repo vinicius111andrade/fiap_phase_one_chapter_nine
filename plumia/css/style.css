@@ -69,9 +69,8 @@ nav{
     font-weight: bold;
 }
 
-.nav_button {
-    color: #537537;
-    font-weight: bold;
+.nav_button:hover {
+    color: #B1B0D9;
 }
 
 a {
