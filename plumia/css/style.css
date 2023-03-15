@@ -105,10 +105,12 @@ a:hover{
   }
 
   th, td {
+    color: #494545;
     padding: 15px;
     box-sizing: border-box;
   }
 
   tbody tr {
+    color: #7F7F7F;
     border-bottom: 1px solid #ccc;
   }
