@@ -18,6 +18,8 @@
             <a class="nav_button" href="../pages/forms_submission.html">Formulario</a>
         </nav>
     </header>
+
+    <h1>Formulário</h1>
     
     <div id="FormDiv">
        
@@ -26,17 +28,17 @@
             <div class="FormLine">
 
                 <div class="LabelDiv">
-                    <label for="name">Nome</label>
-                    <input type="text" id="name" />
+                    <label for="name" class="OutWhitebox">Nome</label>
+                    <input type="text" class="Textinput" id="name" />
                 </div>
 
                 <div class="LabelDiv">
-                    <label for="surname">Sobrenome</label>
-                    <input type="text" id="surname" />
+                    <label for="surname" class="OutWhitebox">Sobrenome</label>
+                    <input type="text" class="Textinput" id="surname" />
                 </div>
 
                 <div class="LabelDiv">
-                    <label for="gender">Gênero</label>
+                    <label for="gender" class="OutWhitebox">Gênero</label>
                     <select name="gender" id="gender">
                         <option value="1">Masculino</option>
                         <option value="2">Feminino</option>
@@ -45,8 +47,8 @@
                 </div>
 
                 <div class="LabelDiv">
-                    <label for="Age">Idade</label>
-                    <input type="number" id="Age" name="Age" min="1" max="150">
+                    <label for="Age" class="OutWhitebox">Idade</label>
+                    <input type="number" class="Textinput" id="Age" name="Age" min="1" max="150">
                 </div>
 
             </div>
@@ -56,22 +58,22 @@
                 <div class="FormLine">
                     <div class="LabelDiv">
                         <label for="Email">Email</label>
-                        <input type="email" id="Email">
+                        <input type="email" placeholder="nome@email.com" class="Textinput" id="Email">
                     </div>
                 </div>
     
                 <div class="FormLine">
                     <div class="LabelDiv">
                         <label for="Country">País</label>
-                        <input type="text" id="Country">
+                        <input type="text" class="Textinput" id="Country">
                     </div>
                     <div class="LabelDiv">
                         <label for="State">Estado</label>
-                        <input type="text" id="State">
+                        <input type="text" class="Textinput" id="State">
                     </div>
                     <div class="LabelDiv">
                         <label for="City">Cidade</label>
-                        <input type="text" id="City">
+                        <input type="text" class="Textinput" id="City">
                     </div>
                 </div>
 
@@ -79,22 +81,20 @@
             
             <div class="FormLine">
                 <div class="LabelDiv">
-                    <label for="Anxiety">Já foi diagnosticado com algum transtorno de ansiedade? Se sim, qual?</label>
-                    <input type="text" id="Anxiety">
+                    <label for="Anxiety" class="OutWhitebox">Já foi diagnosticado(a) com algum transtorno de ansiedade? Se sim, qual?</label>
+                    <input type="text" class="Textinput" id="Anxiety">
                 </div>
             </div>
 
             <div class="FormLine">
                 <div class="LabelDiv">
-                    <label for="Anxiety">Fale um pouco sobre você (opcional)</label>
-                    <input type="text" id="Anxiety">
+                    <label for="Anxiety" class="OutWhitebox">Fale um pouco sobre você (opcional)</label>
+                    <input type="text" class="Textinput" id="aboutUser">
                 </div>
             </div>
             
-            <div class="FormLine">
-                <a href="../pages/forms_feedback.html">
-                    <input type="button" value="Finalizar">
-                </a>
+            <div class="" id="buttonline">
+                <a href="../pages/forms_feedback.html" class="myButton">Finalizar</a>
             </div>
        
         </form>

@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 body {
-    background-color: #e8fdfa;
-    
+    background-color: #ecf0f1;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
 }
 
+h1{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
 
 nav{
     margin:0;
@@ -21,8 +29,15 @@ nav{
     height: 80vh;
     display: flex;
     flex-direction: column; 
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+}
+
+#Form{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .FormLine{
@@ -48,6 +63,64 @@ nav{
     border-radius: 2vh;
 }
 
+.Textinput{
+    border-radius: 5px;
+    height: 3vh;
+}
+
+.OutWhitebox{
+    color: blue;
+}
+
+#Email{
+    width: 99vh;
+    height: 4vh;
+}
+
+label{
+    margin-bottom: 5px;
+}
+
+.myButton {
+	background:linear-gradient(to bottom, #7eadbf 5%, #0061a7 100%);
+	background-color:#7eadbf;
+	border-radius:3px;
+	border:1px solid #124d77;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:10px 23px;
+	text-decoration:none;
+    
+}
+
+#buttonline{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.myButton:hover {
+	background:linear-gradient(to bottom, #0061a7 5%, #7eadbf 100%);
+	background-color:#0061a7;
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+#Anxiety{
+    width: 100vh;
+}
+
+#aboutUser{
+    width: 100vh;
+    height: 20vh;
+}
 /* 
 
 .FormLine2{
