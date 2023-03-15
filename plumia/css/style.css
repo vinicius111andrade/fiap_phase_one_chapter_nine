@@ -69,9 +69,8 @@ nav{
     font-weight: bold;
 }
 
-.nav_button {
-    color: #537537;
-    font-weight: bold;
+.nav_button:hover {
+    color: #B1B0D9;
 }
 
 a {
@@ -96,7 +95,7 @@ a:hover{
     border-collapse: collapse;
   }
 
-  caption {
+  caption, .table-title {
     font-size: 30px;
     color: #7EADBF;
     text-align: center;
@@ -104,23 +103,55 @@ a:hover{
     margin-bottom: 10px;
   }
 
-  thread tr {
-    background: #7EADBF;
-    color: #fff;
-    text-align: left;
-  }
-
   th, td {
+    color: #494545;
     padding: 15px;
     box-sizing: border-box;
   }
 
   tbody tr {
+    color: #7F7F7F;
     border-bottom: 1px solid #ccc;
   }
 
-  tbody tr:hover {
-    font-weight: 900;
-    color: #7EADBF;
-    cursor: pointer;
-  }
+  .myButton {
+	background-color:#7eadbf;
+	border-radius:3px;
+	border:1px solid #000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:13px;
+	padding:10px 23px;
+	text-decoration:none;
+    text-align: center;
+}
+
+.myButton:hover {
+    color: #ffffff;
+	background-color:#7eadbf;
+}
+
+#buttonline{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.button_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.list_links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
