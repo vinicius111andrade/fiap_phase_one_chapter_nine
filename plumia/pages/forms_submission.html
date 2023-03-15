@@ -1,8 +1,105 @@
-<h1>Aqui vamos criar nosso formulário</h1>
-<p>
-    (20% do valor da atividade)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    O formulário para adicionar/cadastrar informações deve direcionar para a página interna de feedback de envio.
-    Por enquanto, na realidade, não se cadastra nada, ou seja, em termos de cadastro, é “fake”;
-    trata-se apenas de uma simulação de envio dos dados para termos uma ideia de como as páginas vão ficar.
-</p>
+    
+    <link rel="stylesheet" href="../css/forms_submission.css">
+
+    <title>Envio de formulário</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="../images/Logo.png" alt="logo image" height="50px">
+
+            <a class="nav_button" href="../pages/research.html">Pesquisa</a>
+            <a class="nav_button" href="../pages/forms_submission.html">Formulario</a>
+        </nav>
+    </header>
+
+    <h1>Formulário</h1>
+    
+    <div id="FormDiv">
+       
+        <form id="Form">
+            
+            <div class="FormLine">
+
+                <div class="LabelDiv">
+                    <label for="name" class="OutWhitebox">Nome</label>
+                    <input type="text" class="Textinput" id="name" />
+                </div>
+
+                <div class="LabelDiv">
+                    <label for="surname" class="OutWhitebox">Sobrenome</label>
+                    <input type="text" class="Textinput" id="surname" />
+                </div>
+
+                <div class="LabelDiv">
+                    <label for="gender" class="OutWhitebox">Gênero</label>
+                    <select name="gender" id="gender">
+                        <option value="1">Masculino</option>
+                        <option value="2">Feminino</option>
+                        <option value="3">Outro</option>
+                    </select>
+                </div>
+
+                <div class="LabelDiv">
+                    <label for="Age" class="OutWhitebox">Idade</label>
+                    <input type="number" class="Textinput" id="Age" name="Age" min="1" max="150">
+                </div>
+
+            </div>
+
+            <div id="WhiteBox">
+
+                <div class="FormLine">
+                    <div class="LabelDiv">
+                        <label for="Email">Email</label>
+                        <input type="email" placeholder="nome@email.com" class="Textinput" id="Email">
+                    </div>
+                </div>
+    
+                <div class="FormLine">
+                    <div class="LabelDiv">
+                        <label for="Country">País</label>
+                        <input type="text" class="Textinput" id="Country">
+                    </div>
+                    <div class="LabelDiv">
+                        <label for="State">Estado</label>
+                        <input type="text" class="Textinput" id="State">
+                    </div>
+                    <div class="LabelDiv">
+                        <label for="City">Cidade</label>
+                        <input type="text" class="Textinput" id="City">
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="FormLine">
+                <div class="LabelDiv">
+                    <label for="Anxiety" class="OutWhitebox">Já foi diagnosticado(a) com algum transtorno de ansiedade? Se sim, qual?</label>
+                    <input type="text" class="Textinput" id="Anxiety">
+                </div>
+            </div>
+
+            <div class="FormLine">
+                <div class="LabelDiv">
+                    <label for="Anxiety" class="OutWhitebox">Fale um pouco sobre você (opcional)</label>
+                    <input type="text" class="Textinput" id="aboutUser">
+                </div>
+            </div>
+            
+            <div class="" id="buttonline">
+                <a href="../pages/forms_feedback.html" class="myButton">Finalizar</a>
+            </div>
+       
+        </form>
+
+    </div>
+        
+</body>
+</html>
