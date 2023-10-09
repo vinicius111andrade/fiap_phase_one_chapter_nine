@@ -1,68 +1,133 @@
 
-#FormDiv{
+
+/* Estilos do contêiner do formulário */
+#FormDiv {
+    width: 90%;
+    max-width: 1200px;
+    margin: 400px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Adicionado para posicionar o botão em relação ao FormDiv */
+}
+
+#Form {
     width: 100%;
-    height: 80vh;
+}
+
+.FormLine {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 64px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    justify-content: space-between; /* Distribui os campos uniformemente */
 }
 
-#Form{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.LabelDiv {
+    flex: 1;
+    padding: 5px;
+    margin: 0 10px; /* Adicionando margem horizontal */
 }
 
-.FormLine{
-    width: 100vh;
-    margin-bottom: 1vh;
-    margin-top: 3vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.LabelDiv{
-    display: flex;
-    flex-direction: column;
-}
-
-#WhiteBox{
-    background-color: #FFFFFF;
-    padding-left: 2vh;
-    padding-right: 2vh;
-    padding-bottom: 1vh;
-    padding-top: 0.5px;
-    border-radius: 2vh;
-}
-
-.Textinput{
+.Textinput, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    height: 3vh;
+    font-size: 16px;
 }
 
-.OutWhitebox{
+.OutWhitebox {
     color: #7eadbf;
     font-weight: 600;
-}
-
-#Email{
-    width: 99vh;
-    height: 4vh;
-}
-
-label{
     margin-bottom: 5px;
+    display: block; /* Faz o título aparecer acima das opções */
 }
 
-#Anxiety{
-    width: 100vh;
+
+#aboutUser {
+    height: 100px;
 }
 
-#aboutUser{
-    width: 100vh;
-    height: 20vh;
+
+
+.myButton {
+    padding: 10px 20px;
+    background-color: #7eadbf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
 }
+
+.myButton:hover {
+    background-color: #6898a0;
+}
+
+/* Estilos para os botões de opção */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.genderOptions {
+    display: flex; /* Alinha as opções lado a lado */
+    align-items: center; /* Alinha verticalmente no centro */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+.genderOptions label {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+
+body {
+    padding-top: 150px; /* 108px (altura do header) + 10px (padding do header) */
+}
+
+#aboutUser {
+    height: 300px; /* Ajuste conforme necessário */
+}
+
+h1 {
+    margin-bottom: -350px; /* Ajuste este valor conforme necessário */
+}
+
+
+.custom-button {
+    font-size: 16px; /* Reduzido o tamanho da fonte */
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #FFFBFC;
+    border: 2px solid #F2DCE4;
+    border-radius: 5px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    width: max-content;
+    margin-left: auto; /* Isso alinhará o botão à direita */
+    margin-right: 0; /* Remova a margem direita para alinhar completamente à direita */
+}
+
+.custom-button:hover {
+    font-size: 16px; /* Reduzido o tamanho da fonte */
+    background-color: #F2DCE4;
+    font-size: 16px;
+    color: #FFFBFC;
+    font-weight: bold;
+    transition: 0.3s;
+    width: max-content;
+    margin-left: auto; /* Isso alinhará o botão à direita */
+    margin-right: 0; /* Remova a margem direita para alinhar completamente à direita */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+

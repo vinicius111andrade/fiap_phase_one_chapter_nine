@@ -1,61 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Formulário</title>
-
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/forms_submission.css">
-    <link rel="icon" type="image/png" href="./images/Icon.png"/>
-
-    <title>Envio de formulário</title>
+    <link rel="icon" type="image/png" href="../images/Logo.png"/>
 </head>
 <body>
-
     <header>
-        <img src="../images/Logo.png" alt="logo image">
+        <div class="logo">
+          <img src="../images/Logo.png" alt="Logo">
+        </div>
+        <div class="menus">
+            <nav>
+                <a class="nav_button" href="../index.html">Home</a>
+                <a class="nav_button" href="../pages/research.html">Pesquisa</a>
+                <a class="nav_button" href="../pages/start_game.html">Game</a>
+            </nav>
+        </div>
+    </header> 
 
-        <nav>
-            <a class="nav_button" href="../index.html">Home</a>
-            <a class="nav_button" href="./research.html">Pesquisa</a>
-        </nav>
-    </header>
 
     <h1>Formulário</h1>
-
     <div id="FormDiv">
-
         <form id="Form">
-
             <div class="FormLine">
-
                 <div class="LabelDiv">
                     <label for="name" class="OutWhitebox">Nome</label>
                     <input type="text" class="Textinput" id="name" />
                 </div>
-
                 <div class="LabelDiv">
                     <label for="surname" class="OutWhitebox">Sobrenome</label>
                     <input type="text" class="Textinput" id="surname" />
                 </div>
+            </div>
 
+            <div class="FormLine">
                 <div class="LabelDiv">
-                    <label for="gender" class="OutWhitebox">Gênero</label>
-                    <select name="gender" id="gender">
-                        <option value="1">Masculino</option>
-                        <option value="2">Feminino</option>
-                        <option value="3">Outro</option>
-                    </select>
+                    <label for="birthdate" class="OutWhitebox">Data de Aniversário</label>
+                    <input type="date" class="Textinput" id="birthdate" />
                 </div>
-
                 <div class="LabelDiv">
-                    <label for="Age" class="OutWhitebox">Idade</label>
-                    <input type="number" class="Textinput" id="Age" name="Age" min="1" max="150">
+                    <label class="OutWhitebox">Gênero</label>
+                    <div class="genderOptions">
+                        <label><input type="radio" name="gender" value="1"> Masculino</label>
+                        <label><input type="radio" name="gender" value="2"> Feminino</label>
+                        <label><input type="radio" name="gender" value="3"> Outro</label>
+                    </div>
                 </div>
-
             </div>
 
             <div class="FormLine">
@@ -63,20 +57,34 @@
                     <label for="Email" class="OutWhitebox">Email</label>
                     <input type="email" placeholder="nome@email.com" class="Textinput" id="Email">
                 </div>
+                <div class="LabelDiv">
+                    <label for="phone" class="OutWhitebox">Telefone</label>
+                    <input type="tel" pattern="[0-9]{10,11}" class="Textinput" id="phone" placeholder="Apenas contendo números">
+                </div>
             </div>
 
             <div class="FormLine">
                 <div class="LabelDiv">
                     <label for="Country" class="OutWhitebox">País</label>
-                    <input type="text" class="Textinput" id="Country">
+                    <select class="Textinput" id="Country" name="Country">
+                        <option value="Brasil">Brasil</option>
+                        <option value="EUA">EUA</option>
+                        <option value="Canadá">Canadá</option>
+                        <!-- ... (outros países) ... -->
+                    </select>
                 </div>
                 <div class="LabelDiv">
                     <label for="State" class="OutWhitebox">Estado</label>
-                    <input type="text" class="Textinput" id="State">
+                    <select class="Textinput" id="State" name="State">
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                        <!-- ... (outros estados) ... -->
+                    </select>
                 </div>
                 <div class="LabelDiv">
                     <label for="City" class="OutWhitebox">Cidade</label>
-                    <input type="text" class="Textinput" id="City">
+                    <input type="text" class="Textinput" id="City" name="City">
                 </div>
             </div>
 
@@ -89,18 +97,23 @@
 
             <div class="FormLine">
                 <div class="LabelDiv">
-                    <label for="Anxiety" class="OutWhitebox">Fale um pouco sobre você (opcional)</label>
+                    <label for="aboutUser" class="OutWhitebox">Fale um pouco sobre você (opcional)</label>
                     <input type="text" class="Textinput" id="aboutUser">
                 </div>
             </div>
-
             <div id="buttonline">
-                <a href="../pages/forms_feedback.html" class="myButton">Finalizar</a>
+                <a href="../pages/forms_feedback.html" class="custom-button">Finalizar</a>
             </div>
-
-        </form>
-
-    </div>
-
+        </form> 
+    </div>  
 </body>
+
+
+
+
+<footer_2>
+    <h6 class="credits">Built in 2023, powered by FIAP</h6>
+</footer_2> 
+
 </html>
+

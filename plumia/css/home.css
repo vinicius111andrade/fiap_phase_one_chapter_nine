@@ -1,38 +1,29 @@
-.people_container, .content_container {
-    width: 100%;
-    display: inline-block;
-}
-
 .person {
     text-align: center;
+    margin-bottom: 5px; /* Adicionado para reduzir o espaço entre cada 'person' */
     display: inline-block;
 }
 
 .person_name {
     text-decoration: none;
+    margin: 5px 0; /* Reduz o espaço acima e abaixo do nome */
 }
+
+
 
 .clickable_icon {
-    width: 35px;
-    height: 35px;
+    margin: 5px -10px; /* Reduz o espaço ao redor dos ícones */
+    width: 20px; /* Define a largura do ícone */
+    height: 20px; /* Define a altura do ícone */
 }
 
-.intro_text {
-    margin: 64px;
-}
 
-.intro_image {
-    margin: 24px;
-}
 
 .page_container{
     width: auto;
     height: auto;
 }
 
-.esquerda, .direita{
-    width: 50%;height: 50%  ;
-}
 
 .esquerda{
     float: left;
@@ -42,18 +33,4 @@
     float: right;
 }
 
-.first_title{
-    font-size: 70px;
-    color: #B1B0D9;
-    line-height: 30%;
-}
 
-.second_title {
-    font-size: 70px;
-    color: #7EADBF;
-    line-height: 30%;
-}
-
-.credits {
-    margin: 24px;
-}

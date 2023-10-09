@@ -1,0 +1,86 @@
+.first_title {
+    margin-bottom: 70px; /* Ajuste o valor conforme necessário */
+    font-size: 50px;
+    color: #B1B0D9;
+    line-height: 30%;
+}
+
+.second_title {
+    font-size: 40px;
+    color: #7EADBF;
+    line-height: 30%;
+}
+
+.credits {
+    margin: 10px;
+    margin-top: 10px; /* Reduz o espaço acima do texto 'Built in 2023, powered by FIAP' */
+}
+
+.third_title {
+    font-size: 20px;
+    color: #181616;
+    font-weight: bold; /* Corrigido de font-style para font-weight */
+    line-height: 200%;
+}
+
+.intro_text {
+    font-size: 20px;
+    text-align: left;
+    color: #181616;
+    line-height: 200%;   
+    line-height:1.5;
+}
+
+.list_links {
+    font-size: 16px;
+    text-align: left;
+    color: #181616;
+}
+
+.list_links {
+    font-size: 16px;
+    text-align: left;
+    color: #181616;
+    margin: 10px; /* Remove margens padrão */
+    padding: 0; /* Remove padding padrão */
+}
+
+.list_links a {
+    color: blue;
+    text-decoration: none;
+}
+
+.list_links a:hover { /* Estilo para quando o mouse passar por cima do link */
+    text-decoration: underline; /* Adiciona um sublinhado ao link */
+}
+
+.list_links a:hover {
+    text-decoration: underline;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 20px; /* Adiciona um espaço entre os botões */
+}
+
+.left-button {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.right-button {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+
+.footer_2 { /* Ajuste no nome da classe */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #fff; /* ou outra cor de sua escolha */
+    padding: 10px 0; /* Adiciona um padding vertical */
+}
