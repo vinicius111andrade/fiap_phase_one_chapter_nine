@@ -1,6 +1,6 @@
 .person {
     text-align: center;
-    margin-bottom: 5px; /* Adicionado para reduzir o espaço entre cada 'person' */
+    margin-bottom: 10px; /* Adicionado para reduzir o espaço entre cada 'person' */
     display: inline-block;
 }
 
@@ -15,13 +15,6 @@
     margin: 5px -10px; /* Reduz o espaço ao redor dos ícones */
     width: 20px; /* Define a largura do ícone */
     height: 20px; /* Define a altura do ícone */
-}
-
-
-
-.page_container{
-    width: auto;
-    height: auto;
 }
 
 

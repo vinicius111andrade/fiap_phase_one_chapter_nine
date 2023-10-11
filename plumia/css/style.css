@@ -3,10 +3,10 @@
 body {
     background-color: #F8FDFF;
     font-family: 'Quicksand', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -38,8 +38,12 @@ p {
     margin:24px;
 }
 
-h1{
+h1 {
     color: #B1B0D9;
+    text-align: center;
+}
+
+h2, p {
     text-align: center;
 }
 
@@ -58,6 +62,22 @@ li {
     color: #7F7F7F;
     text-indent: 25px;
 }
+
+
+a {
+    color: #181616;
+    text-decoration: none;
+    font-weight: 800;
+    display: inline-block;
+    padding: 10px 15px;
+    line-height: 1;
+}
+
+a:hover {
+    color: #7EADBF;
+    text-decoration: underline;
+}
+
 
 header {
     margin:0px;
@@ -80,24 +100,22 @@ header {
     
 }
 
+
+/* style.css */
 footer {
     width: 100%;
-    height: 0px;
-    background: linear-gradient(to right, #E8FDFA, #F2DCE4); /* "to right" faz o degradê ir da esquerda para a direita */
-    position: relative;
-    flex-shrink: 0;
-    overflow: hidden; /* Isso garante que o pseudo-elemento não saia do footer */
+    padding: 10px 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #E8FDFA, #F2DCE4);
+    margin-top: auto;
+    max-height: 250px; /* Define o tamanho máximo do footer */
+    overflow: auto; /* Adiciona uma barra de rolagem se o conteúdo exceder o tamanho máximo */
 }
 
-footer::before {
-    content: "";
-    position: absolute;
-    top: -100px; /* Isso move o pseudo-elemento para cima */
-    left: 0;
-    right: 0;
-    height: 100px;
-    background: inherit; /* Pega o mesmo background do footer */
 
+
+footer h4, footer h6 {
+    margin: 0; /* Remove as margens padrão */
 }
 
 
@@ -196,32 +214,32 @@ a:hover{
 }
 
 .first_title {
-    margin-bottom: 70px; /* Ajuste o valor conforme necessário */
-    font-size: 70px;
+    margin-bottom: 80px; /* Ajuste o valor conforme necessário */
+    font-size: 90px;
     color: #B1B0D9;
     line-height: 30%;
 }
 
 .second_title {
-    font-size: 50px;
+    font-size: 60px;
     color: #7EADBF;
     line-height: 30%;
 }
 
 .credits {
-    margin: 10px;
-    margin-top: 10px; /* Reduz o espaço acima do texto 'Built in 2023, powered by FIAP' */
+    margin-top: 0px; /* Adiciona uma margem superior para separar do conteúdo acima */
+    margin-bottom: 0;
 }
 
 .third_title{
-    font-size: 20px;
+    font-size: 30px;
     color: #181616;
     font-style: bold;
     line-height: 200%;
 }
 
 .intro_text{
-    font-size: 18px;
+    font-size: 25px;
     color: #181616;
     font-style: bold;
     line-height: 200%;   
@@ -236,47 +254,37 @@ a:hover{
 }
 
 
-.custom-button {
+.custom-button, .custom-button:hover {
     display: flex;
-    font-size: 20px;
     align-items: center;
     justify-content: center;
     padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: 20px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.custom-button {
     background-color: #FFFBFC;
     border: 2px solid #F2DCE4;
     border-radius: 5px;
     color: #000;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-    margin-top: 20px;
-    width: max-content;
-    margin-left: auto; /* Adicionado para centralizar o botão */
-    margin-right: auto; /* Adicionado para centralizar o botão */
 }
 
 .custom-button:hover {
     background-color: #F2DCE4;
-    font-size: 20px;
     color: #FFFBFC;
-    font-weight: bold;
-    transition: 0.3s;
-    margin-top: 20px;
-    width: max-content;
-    margin-left: auto; /* Adicionado para centralizar o botão */
-    margin-right: auto; /* Adicionado para centralizar o botão */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 20px;
 }
 
 .feather-icon {
-    display: inline-block;
     margin-left: 10px;
     vertical-align: middle;
-    width: 25px; /* Reduzido o tamanho do ícone */
-    height: 25px; /* Reduzido o tamanho do ícone */
+    width: 25px;
+    height: 25px;
 }
 
 .custom-button:active .feather-icon {
