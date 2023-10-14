@@ -1,29 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 body {
-    background-color: #F8FDFF;
+    background-color: #f8fdfe;
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
-    text-align: center;
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
 body > *:not(footer_2) {
     flex: 1 0 auto; /* Ocupa todo o espaço disponível, exceto o necessário para o footer_2 */
 }
 
-.content {
-    flex: 1 0 auto;
-    display: flex; /* Adicionado para tornar o contêiner um flex container */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    flex-wrap: wrap; /* Permite que os itens se envolvam se necessário */
-    line-height: 0%;
-}
+
 
 
 .esquerda, .direita {
@@ -52,14 +42,14 @@ h2{
 }
 
 p{
-    color: #7F7F7F;
+    color: 181616;
     text-indent: 25px;
     font-size: large;
     margin: 64px;
 }
 
 li {
-    color: #7F7F7F;
+    color: 181616;
     text-indent: 25px;
 }
 
@@ -82,7 +72,7 @@ a:hover {
 header {
     margin:0px;
     padding: 0px;
-	background-color: #F8FDFF;
+	background-color: #f8fdfe;
     width: 100%;
 	height: 108px;
     display: flex;
@@ -121,7 +111,7 @@ footer h4, footer h6 {
 
 footer_2 {
     width: 100%;
-    height: 50px;
+    height: 20px;
     background: linear-gradient(to right, #E8FDFA, #F2DCE4); /* "to right" faz o degradê ir da esquerda para a direita */
     position: relative;
     flex-shrink: 0;
@@ -196,12 +186,12 @@ a:hover{
 
   th, td {
     color: #494545;
-    padding: 15px;
+    padding: 10px;
     box-sizing: border-box;
   }
 
   tbody tr {
-    color: #7F7F7F;
+    color: 181616;
     border-bottom: 1px solid #ccc;
   }
 

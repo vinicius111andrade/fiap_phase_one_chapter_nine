@@ -1,0 +1,61 @@
+body {
+    text-align: center;
+    flex-direction: column;
+    min-height: 100vh;
+    flex-direction: column;
+    padding-top: 150px; /* Este valor deve ser igual ou ligeiramente maior que a altura do seu header ou qualquer outro elemento fixo no topo. */
+}
+
+
+
+
+.nav_button {
+    color: #181616;
+    text-decoration: bold;
+}
+
+.nav_button:hover {
+    color: #B1B0D9;
+}
+
+/* Estilo do conteúdo principal */
+.content {
+    flex: 1 0 auto;
+    justify-content: left;
+    align-items: left;
+    flex-wrap: wrap;
+    
+}
+
+.first {
+    flex: auto;
+    display: flex;
+    text-align: center;
+    margin-bottom: 0px; /* Ajuste o valor conforme necessário */
+    font-size: 90px;
+    color: #B1B0D9;
+    line-height: 250%;
+}
+
+.second {
+    display: flex;
+    text-align: center;
+    margin-bottom: 0x; /* Ajuste o valor conforme necessário */
+    font-size: 50px;
+    color: #7EADBF;
+    line-height:0%;
+}
+
+.text {
+    width: 100%;              /* Defina a largura que você deseja para o texto */
+    letter-spacing: 3PX;
+    font-size: 25px;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 10em;
+    margin-block-end: 4em;
+    margin-inline-start: 100px;
+    margin-inline-end: 0px;
+    padding-inline-start: 10px;
+}
+
