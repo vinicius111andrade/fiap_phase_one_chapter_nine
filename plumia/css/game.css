@@ -1,0 +1,56 @@
+    body {
+        text-align: center;
+        flex-direction: column;
+        min-height: 100vh;
+        flex-direction: column;
+    }
+
+.content {
+    flex: 1 0 auto;
+    display: flex; /* Adicionado para tornar o contêiner um flex container */
+    flex-wrap: wrap; /* Permite que os itens se envolvam se necessário */
+    line-height: 0%;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.person {
+    text-align: center;
+    margin-bottom: 10px; /* Adicionado para reduzir o espaço entre cada 'person' */
+    display: inline-block;
+}
+
+.person_name {
+    text-decoration: none;
+    margin: 5px 0; /* Reduz o espaço acima e abaixo do nome */
+}
+
+
+
+.clickable_icon {
+    margin: 5px -10px; /* Reduz o espaço ao redor dos ícones */
+    width: 20px; /* Define a largura do ícone */
+    height: 20px; /* Define a altura do ícone */
+}
+
+
+.esquerda{
+    float: left;
+}
+
+.direita{
+    float: right;
+}
+
+
+.sound-toggle {
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/mudo.png');
+    cursor: pointer;
+}
+
+.sound-toggle:hover {
+    background-image: url('../images/volume.png');
+}
+
