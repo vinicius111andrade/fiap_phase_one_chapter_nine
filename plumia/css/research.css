@@ -6,9 +6,6 @@ body {
     padding-top: 150px; /* Este valor deve ser igual ou ligeiramente maior que a altura do seu header ou qualquer outro elemento fixo no topo. */
 }
 
-
-
-
 .nav_button {
     color: #181616;
     text-decoration: bold;

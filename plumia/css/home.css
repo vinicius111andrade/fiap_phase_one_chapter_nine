@@ -1,45 +1,28 @@
-    body {
-        text-align: center;
-        flex-direction: column;
-        min-height: 100vh;
-        flex-direction: column;
-    }
-
+/* Estilização específica para o conteúdo da página inicial */
 .content {
-    flex: 1 0 auto;
-    display: flex; /* Adicionado para tornar o contêiner um flex container */
-    flex-wrap: wrap; /* Permite que os itens se envolvam se necessário */
-    line-height: 0%;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    flex: 1 0 auto;    /* Flex-grow, flex-shrink e flex-basis para o conteúdo principal da página inicial */
+    display: flex;    /* Definindo o tipo de display para flex */
+    justify-content: center;    /* Centraliza os itens horizontalmente */
+    align-items: center;    /* Centraliza os itens verticalmente */
 }
 
+/* Estilização para itens individuais no rodapé */
 .person {
-    text-align: center;
-    margin-bottom: 10px; /* Adicionado para reduzir o espaço entre cada 'person' */
-    display: inline-block;
+    text-align: center;    /* Centraliza o conteúdo horizontalmente */
+    margin: 20px 40px;    /* Adiciona margem à direita, à esquerda, acima e abaixo para espaçar ainda mais os itens */
+    display: inline-block;    /* Permite que os itens da equipe fiquem lado a lado */
 }
 
+/* Estilização para os nomes das pessoas na seção de equipe */
 .person_name {
-    text-decoration: none;
-    margin: 5px 0; /* Reduz o espaço acima e abaixo do nome */
+    text-decoration: none;    /* Remove qualquer sublinhado do nome */
+    margin: 5px 0;    /* Define margens acima e abaixo do nome */
 }
 
-
-
+/* Estilização para os ícones clicáveis (GitHub, LinkedIn, etc.) */
 .clickable_icon {
-    margin: 5px -10px; /* Reduz o espaço ao redor dos ícones */
-    width: 20px; /* Define a largura do ícone */
-    height: 20px; /* Define a altura do ícone */
+    margin: 5px -10px;    /* Define margens ao redor dos ícones */
+    width: 20px;    /* Largura do ícone */
+    height: 20px;    /* Altura do ícone */
 }
-
-
-.esquerda{
-    float: left;
-}
-
-.direita{
-    float: right;
-}
-
 

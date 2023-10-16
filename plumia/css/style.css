@@ -1,5 +1,7 @@
+/* Importando a fonte 'Quicksand' do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
+/* Definindo estilos para o elemento body */
 body {
     background-color: #f8fdfe;
     font-family: 'Quicksand', sans-serif;
@@ -7,127 +9,83 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100vh;
 }
 
-body > *:not(footer_2) {
-    flex: 1 0 auto; /* Ocupa todo o espaço disponível, exceto o necessário para o footer_2 */
-}
-
-
-
-
+/* Estilos para os containers .esquerda e .direita */
 .esquerda, .direita {
-    flex: 1; /* Permite que ambos ocupem espaço igual */
-    max-width: 50%; /* Define a largura máxima para 50% */
-    box-sizing: border-box; /* Garante que padding e border estejam incluídos na largura */
-    padding: 20px; /* Adiciona um pouco de espaço entre os elementos */
-    width: 50%;height: 50%  ;
-}
-
-p {
-    margin:24px;
-}
-
-h1 {
-    color: #B1B0D9;
-    text-align: center;
-}
-
-h2, p {
-    text-align: center;
-}
-
-h2{
-    text-align: center;
-}
-
-p{
-    color: 181616;
-    text-indent: 25px;
-    font-size: large;
-    margin: 64px;
-}
-
-li {
-    color: 181616;
-    text-indent: 25px;
-}
-
-
-a {
-    color: #181616;
-    text-decoration: none;
-    font-weight: 800;
-    display: inline-block;
-    padding: 10px 15px;
-    line-height: 1;
-}
-
-a:hover {
-    color: #7EADBF;
-    text-decoration: underline;
-}
-
-
-header {
-    margin:0px;
-    padding: 0px;
-	background-color: #f8fdfe;
-    width: 100%;
-	height: 108px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10px; /* Adicionado um padding para dar espaço ao redor */
-    position: fixed; /* Adicione isso para posicionar o menu e a imagem em relação ao header */
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; /* Isso garante que o header fique acima de outros elementos */
-    background-image: url('/images/cabecalho.png');
-    background-repeat: no-repeat;
-    background-position: right 30px top; /* Centraliza a imagem de fundo */
-    
-}
-
-
-/* style.css */
-footer {
-    width: 100%;
-    padding: 10px 0;
+    flex: 1;
+    max-width: 50%;
     box-sizing: border-box;
-    background: linear-gradient(to right, #E8FDFA, #F2DCE4);
-    margin-top: auto;
-    max-height: 250px; /* Define o tamanho máximo do footer */
-    overflow: auto; /* Adiciona uma barra de rolagem se o conteúdo exceder o tamanho máximo */
+    padding: 20px;
 }
 
-
-
-footer h4, footer h6 {
-    margin: 0; /* Remove as margens padrão */
+/* Estilização para todos os elementos <h1> */
+h1 {
+    color: #B1B0D9;    /* Cor do texto */
+    text-align: center;    /* Centraliza o texto horizontalmente */
 }
 
-
-footer_2 {
-    width: 100%;
-    height: 20px;
-    background: linear-gradient(to right, #E8FDFA, #F2DCE4); /* "to right" faz o degradê ir da esquerda para a direita */
-    position: relative;
-    flex-shrink: 0;
-    overflow: hidden; /* Isso garante que o pseudo-elemento não saia do footer */
-    bottom: 0; /* Grudando o footer no final da página */
+/* Estilização para todos os elementos <h2> e <p> */
+h2, p {
+    text-align: center;    /* Centraliza o texto horizontalmente */
 }
 
-.logo {
-    width: 0px;
-    height: 100px;
+/* Estilização específica para elementos <p> */
+p {
+    color: #181616;    /* Cor do texto */
+    text-indent: 25px;    /* Indentação no início de cada parágrafo */
+    font-size: 25px;    /* Tamanho da fonte */
+    margin: 64px;    /* Margens ao redor do parágrafo */
+}
+
+/* Estilização para elementos <li> */
+li {
+    color: #181616;    /* Cor do texto */
+    text-indent: 25px;    /* Indentação no início de cada item de lista */
+}
+
+/* Estilização para links <a> */
+a {
+    color: #181616;    /* Cor do texto dos links */
+    text-decoration: none;    /* Remove o sublinhado dos links */
+    font-weight: 800;    /* Peso da fonte para links */
+    display: inline-block;    /* Definindo o tipo de display para os links */
+    padding: 10px 15px;    /* Espaçamento interno para os links */
+    line-height: 1;    /* Espaçamento entre linhas para os links */
+}
+
+/* Estilo para links quando o mouse está sobre eles */
+a:hover {
+    color: #7EADBF;    /* Cor do texto dos links ao passar o mouse */
+    text-decoration: underline;    /* Adiciona sublinhado aos links ao passar o mouse */
+}
+
+/* Estilização para o cabeçalho da página */
+header {
+    margin: 0;    /* Removendo margens padrão */
+    padding: 0px;    /* Espaçamento interno para o cabeçalho */
+    background-color: #f8fdfe;    /* Cor de fundo do cabeçalho */
+    width: 100%;    /* Largura total do cabeçalho */
+    height: 108px;    /* Altura do cabeçalho */
+    display: flex;    /* Definindo o tipo de display para flex */   
+    justify-content: space-between;    /* Distribui o espaço entre os itens do cabeçalho */
+    align-items: center;    /* Centraliza os itens verticalmente no cabeçalho */
+    position: fixed;    /* Fixa o cabeçalho no topo da página */
+    top: 0;    /* Posiciona o cabeçalho no topo */
+    z-index: 1000;    /* Define uma ordem de empilhamento para o cabeçalho, garantindo que ele fique acima de outros elementos */
+    background-image: url('/images/cabecalho.png');    /* Imagem de fundo para o cabeçalho */
+    background-repeat: no-repeat;    /* Evita que a imagem de fundo se repita */
+    background-position: right 30px top;    /* Posiciona a imagem de fundo à direita e no topo */
 }
 
 .menus {
+
     position: absolute; /* Posicione o elemento menus absolutamente dentro do header */
-    padding: -35px 20px; /* Ajuste o valor conforme necessário */
-    font-size: 17px;
+    padding: -25px 30px; /* Ajuste o valor conforme necessário */
+    font-size: 20px;
     right: 70px; /* Posicione no lado direito do header */
     width: auto; /* Remova a largura de 100% */
     height: 70px;
@@ -137,113 +95,103 @@ footer_2 {
 }
 
 
-nav {
-    position: relative; /* Posicione o nav absolutamente dentro do elemento menus */
-    top: 0%; /* Posicione o nav no centro vertical do elemento menus */
-    left: 40%; /* Posicione o nav no centro horizontal do elemento menus */
-    transform: translate(-40%, -50%); /* Use a transformação para centralizar perfeitamente o nav */
+/* Adicionando um espaçamento no topo do conteúdo principal para compensar a altura do cabeçalho fixo */
+main.content {
+    padding-top: 120px;    /* Adicionando um padding-top de 120px para compensar a altura do cabeçalho e dar um pouco de espaço extra */
+}
+
+/* Estilização para o rodapé da página */
+footer {
+    width: 100%;    /* Largura total do rodapé */
+    padding: 30px 0px;    /* Espaçamento interno para o rodapé */
+    background: linear-gradient(to right, #E8FDFA, #F2DCE4);    /* Gradiente de cor de fundo para o rodapé */
+    max-height: 270px;    /* Altura máxima do rodapé */
+}
+
+/* Estilos para os subtítulos <h4> e <h6> no rodapé */
+footer h4, footer h6 {
+    margin: 0;    /* Removendo margens padrão */
+}
+
+body > *:not(footer_2) {
+    flex: 1 0 auto; /* Ocupa todo o espaço disponível, exceto o necessário para o footer_2 */
+}
+
+footer_2 {
+    width: 100%;	/* Largura total do rodapé */
+    height: 20px;
+    background: linear-gradient(to right, #E8FDFA, #F2DCE4); /* "to right" faz o degradê ir da esquerda para a direita */
+    position: relative;
+    flex-shrink: 0;
+    overflow: hidden; /* Isso garante que o pseudo-elemento não saia do footer */
+    bottom: 0; /* Grudando o footer no final da página */
 }
 
 
+.credits {
+    margin-top: 0px;    /* Adiciona uma margem superior para separar do conteúdo acima */
+    font-size: 15px;
+    margin-bottom: 0;   /* Adiciona uma margem inferior à página */
+}
 
+
+/* Estilização específica para os containers .esquerda e .direita */
+.esquerda {
+    float: left;    /* Alinha o container à esquerda */
+}
+
+.direita {
+    float: right;    /* Alinha o container à direita */
+}
+
+/* Estilização para os botões de navegação no cabeçalho */
 .nav_button {
-    color: #181616
+    color: #181616;    /* Cor do texto do botão */
 }
 
+/* Estilo para os botões de navegação quando o mouse está sobre eles */
 .nav_button:hover {
-    color: #B1B0D9;
+    color: #B1B0D9;    /* Cor do texto do botão ao passar o mouse */
 }
 
-a {
-    color: #181616;
-    text-decoration: none;
-    font-weight: 800;
-    display: inline-block;
-    padding: 10px 15px;
-    line-height: 1;
-    text-decoration: none;
-}
-
-a:hover{
-    color: #7EADBF;
-    text-decoration: underline;
-  }
-
-  table {
-    margin: 64px auto;
-    font-size: 18px;
-    width: 100%;
-    border-collapse: collapse;
-  }
-
-  caption, .table-title {
-    font-size: 30px;
-    color: #7EADBF;
-    text-align: center;
-    font-weight: 900;
-    margin-bottom: 10px;
-  }
-
-  th, td {
-    color: #494545;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  tbody tr {
-    color: 181616;
-    border-bottom: 1px solid #ccc;
-  }
-
-
-
-.list_links {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
+/* Estilização para os títulos .first_title, .second_title e .third_title na página inicial */
 .first_title {
-    margin-bottom: 80px; /* Ajuste o valor conforme necessário */
-    font-size: 90px;
-    color: #B1B0D9;
-    line-height: 30%;
+    margin-bottom: 80px;    /* Espaçamento abaixo do título */
+    font-size: 90px;    /* Tamanho da fonte */
+    color: #B1B0D9;    /* Cor do texto */
+    line-height: 0%;    /* Espaçamento entre linhas */
 }
 
 .second_title {
-    font-size: 60px;
-    color: #7EADBF;
-    line-height: 30%;
+    font-size: 60px;    /* Tamanho da fonte */
+    color: #7EADBF;    /* Cor do texto */
+    line-height: 200%;    /* Espaçamento entre linhas */
 }
 
-.credits {
-    margin-top: 0px; /* Adiciona uma margem superior para separar do conteúdo acima */
-    margin-bottom: 0;
+.third_title {
+    font-size: 30px;    /* Tamanho da fonte */
+    color: #181616;    /* Cor do texto */
+    font-weight: bold;    /* Peso da fonte */
+    line-height: 200%;    /* Espaçamento entre linhas */
 }
 
-.third_title{
-    font-size: 30px;
-    color: #181616;
-    font-style: bold;
-    line-height: 200%;
+/* Estilização para os textos com a classe .intro_text */
+.intro_text {
+    font-size: 25px;    /* Tamanho da fonte */
+    color: #181616;    /* Cor do texto */
+    font-weight: bold;    /* Peso da fonte */
+    line-height: 200%;    /* Espaçamento entre linhas */
 }
 
-.intro_text{
-    font-size: 25px;
-    color: #181616;
-    font-style: bold;
-    line-height: 200%;   
+/* Estilização para os ícones com a classe .feather-icon dentro dos botões */
+.feather-icon {
+    margin-left: 10px;    /* Espaçamento à esquerda do ícone */
+    vertical-align: middle;    /* Alinha verticalmente o ícone no centro do botão */
+    width: 25px;    /* Largura do ícone */
+    height: 25px;    /* Altura do ícone */
 }
 
-
-.text{
-    font-size: 25px;
-    color: #181616;
-    font-style: bold;
-    line-height: 200%;   
-}
-
-
+/* Estilo para os ícones dentro dos botões quando estes são pressionados */
 .custom-button, .custom-button:hover {
     display: flex;
     align-items: center;
@@ -270,14 +218,47 @@ a:hover{
     color: #FFFBFC;
 }
 
-.feather-icon {
-    margin-left: 10px;
-    vertical-align: middle;
-    width: 25px;
-    height: 25px;
+/* Estilização para tabelas */
+table {
+    margin: 64px auto;    /* Margens ao redor da tabela */
+    font-size: 18px;    /* Tamanho da fonte na tabela */
+    width: 100%;    /* Largura total da tabela */
+    border-collapse: collapse;    /* Colapsa as bordas das células da tabela */
 }
 
-.custom-button:active .feather-icon {
-    width: 25px; /* Tamanho do ícone após o clique */
-    height: 25px; /* Tamanho do ícone após o clique */
+/* Estilização para os títulos das tabelas e legendas */
+.caption, .table-title {
+    font-size: 30px;    /* Tamanho da fonte para títulos e legendas */
+    color: #7EADBF;    /* Cor do texto para títulos e legendas */
+    text-align: center;    /* Centraliza o texto horizontalmente */
+    font-weight: 900;    /* Peso da fonte */
+    margin-bottom: 10px;    /* Espaçamento abaixo dos títulos e legendas */
 }
+
+/* Estilização para as células das tabelas (cabeçalhos e dados) */
+th, td {
+    color: #494545;    /* Cor do texto nas células */
+    padding: 10px;    /* Espaçamento interno nas células */
+    box-sizing: border-box;    /* Garante que padding e border estejam incluídos no tamanho total da célula */
+}
+
+/* Estilização para as linhas do corpo da tabela */
+tbody tr {
+    color: #181616;    /* Cor do texto nas linhas */
+    border-bottom: 1px solid #ccc;    /* Adiciona uma linha na parte inferior de cada linha */
+}
+
+/* Estilização para listas de links */
+.list_links {
+    display: flex;    /* Define o tipo de display para flex */
+    flex-direction: column;    /* Direção principal do flex */
+    justify-content: space-evenly;    /* Distribui o espaço igualmente entre os links */
+}
+
+.credits {
+    margin-top: 0px; /* Adiciona uma margem superior para separar do conteúdo acima */
+    margin-bottom: 0;
+}
+
+
+

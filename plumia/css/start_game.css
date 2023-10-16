@@ -1,83 +1,22 @@
-
-
-.nav_button {
-    color: #181616;
-    text-decoration: bold;
-}
-
-.nav_button:hover {
-    color: #B1B0D9;
-}
-
-/* Estilo do conteúdo principal */
+/* Estilos para o contêiner principal do conteúdo */
 .content {
-    width: 80%;            /* Define a largura do contêiner como 80% da janela */
-    margin: 0 auto;        /* Centraliza o contêiner horizontalmente */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;    /* Para posicionar o botão em relação a este contêiner */
-
+    width: 100%;                     /* Define a largura do contêiner como 80% da janela */
+    margin: 0 auto;                 /* Centraliza o contêiner horizontalmente */
+    display: flex;                  /* Define o display como flex para criar um layout flexível */
+    flex-direction: column;         /* Define a direção dos itens flex como coluna */
+    justify-content: center;        /* Centraliza os itens flex verticalmente */
+    align-items: center;            /* Centraliza os itens flex horizontalmente */
+    position: relative;             /* Para posicionar o botão em relação a este contêiner */
 }
 
-.first_title {
-    padding-top: 150px; /* Este valor deve ser igual ou ligeiramente maior que a altura do seu header ou qualquer outro elemento fixo no topo. */
-    flex: auto;
-    display: flex;
-    text-align: center;
-    margin-bottom: 0px; /* Ajuste o valor conforme necessário */
-    font-size: 70px;
-    color: #B1B0D9;
-}
-
-.second_title {
-    display: flex;
-    text-align: center;
-    margin-bottom: 0x; /* Ajuste o valor conforme necessário */
-    font-size: 100px;
-    color: #7EADBF;
-    line-height:0%;
-}
-
+/* Estilos para o texto */
 .text {
-    width: 60%;              /* Defina a largura que você deseja para o texto */
-    text-align: left;      /* Alinha o texto à esquerda */
-    letter-spacing: 0px;
-    font-size: 25px;
-    display: block;
-    margin-left: auto;        /* Margem automática à esquerda */
-    margin-right: auto;       /* Margem automática à direita */
+    width: 50%;                     /* Define a largura do texto */
+    text-align: left;               /* Alinha o texto à esquerda */
+    letter-spacing: 0px;            /* Define o espaçamento entre as letras */
+    font-size: 30px;                /* Define o tamanho da fonte */
+    display: block;                 /* Define o display como bloco */
+    margin-left: auto;              /* Margem automática à esquerda */
+    margin-right: auto;             /* Margem automática à direita */
 }
 
-.custom-button_2 {
-    position: absolute;    /* Posiciona o botão em relação ao contêiner ".content" */
-    bottom: -400px;          /* 20 pixels da parte inferior do contêiner */
-    right: 800px;           /* 20 pixels da direita do contêiner */
-    z-index: 2;            /* Garante que o botão esteja acima do fundo */
-    font-size: 30px;
-    padding: 50px 50px;
-    width: max-content;
-    display: flex;
-}
-
-.custom-button_2 {
-    background-color: #FFFBFC;
-    border: 2px solid #F2DCE4;
-    border-radius: 15px;
-    color: #000;
-}
-
-.custom-button_2:hover {
-    background-color: #F2DCE4;
-    color: #FFFBFC;
-}
-
-.content::before {
-    position: absolute;
-    top: 1;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-    

@@ -1,140 +1,90 @@
-
-
-/* Estilos do contêiner do formulário */
+/* Define estilos gerais para o elemento body do documento */
 body {
-    text-align: center;
-    flex-direction: column;
-    min-height: 100vh;
-    flex-direction: column;
+    text-align: center; /* Centraliza o texto horizontalmente */
+    flex-direction: column; /* Configura os elementos filhos do body em uma coluna vertical */
+    min-height: 93vh; /* Faz com que o body tenha no mínimo a altura da janela de visualização */
+    padding-top: 120px; /* Adiciona espaço no topo para compensar a altura do header ou outro conteúdo fixo */
 }
 
+/* Define estilos para o contêiner principal do formulário */
 #FormDiv {
-    width: 90%;
-    max-width: 1200px;
-    margin: 400px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: relative; /* Adicionado para posicionar o botão em relação ao FormDiv */
+    width: 100%; /* Define a largura como 100% da largura do contêiner pai */
+    max-width: 1200px; /* Limita a largura máxima a 1200px */
+    margin: 300px auto; /* Centraliza horizontalmente e adiciona margem de 400px na parte superior e inferior */
+    background-color: #fff; /* Define a cor de fundo como branco */
+    padding: 30px; /* Adiciona espaço interno de 20px em todos os lados */
+    border-radius: 10px; /* Arredonda os cantos do contêiner */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil ao contêiner */
+    position: relative; /* Define a posição como relativa para que os elementos posicionados absolutamente dentro dele se relacionem a este contêiner */
 }
 
+/* Estilos para o elemento form */
 #Form {
-    width: 100%;
+    width: 90%; /* 80% da largura de FormDiv */
+    margin: auto auto; /* Isso centraliza o formulário horizontalmente dentro do FormDiv */
 }
 
+/* Estiliza cada linha do formulário */
 .FormLine {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 25px;
-    justify-content: space-between; /* Distribui os campos uniformemente */
+    display: flex; /* Usa o display flexível para alinhar os elementos filhos */
+    flex-wrap: wrap; /* Permite que os itens da flexbox se envolvam para a próxima linha se necessário */
+    margin-bottom: 25px; /* Adiciona margem abaixo de cada linha */
+    justify-content: space-between; /* Distribui o espaço igualmente entre os itens da linha */
 }
 
+/* Estiliza a div que contém cada rótulo do formulário */
 .LabelDiv {
-    flex: 1;
-    padding: 5px;
-    margin: 0 10px; /* Adicionando margem horizontal */
+    flex: 1; /* Ocupa todo o espaço disponível na linha */
+    padding: 5px; /* Adiciona espaço interno de 5px em todos os lados */
+    margin: 0 10px; /* Adiciona margens horizontais de 10px e margem vertical de 0 */
 }
 
+/* Estiliza os campos de texto e os elementos select do formulário */
 .Textinput, select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+    width: 100%; /* Define a largura como 100% da largura do contêiner pai */
+    padding: 10px; /* Adiciona espaço interno de 10px em todos os lados */
+    border: 1px solid #ccc; /* Adiciona uma borda cinza clara de 1px */
+    border-radius: 5px; /* Arredonda os cantos dos campos */
+    font-size: 16px; /* Define o tamanho da fonte para 16px */
 }
 
+/* Estiliza o título que aparece acima das opções de escolha */
 .OutWhitebox {
-    color: #7eadbf;
-    font-weight: 600;
-    margin-bottom: 5px;
-    display: block; /* Faz o título aparecer acima das opções */
+    color: #7eadbf; /* Define a cor do texto */
+    font-weight: 600; /* Define o peso da fonte como semi-negrito */
+    margin-bottom: 5px; /* Adiciona uma pequena margem abaixo do título */
+    display: block; /* Faz o título se comportar como um bloco, ocupando toda a largura e aparecendo em sua própria linha */
 }
 
-
+/* Estiliza a área de texto sobre o usuário */
 #aboutUser {
-    height: 100px;
+    height: 300px; /* Define a altura da área de texto */
 }
 
-
-
-.myButton {
-    padding: 10px 20px;
-    background-color: #7eadbf;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.myButton:hover {
-    background-color: #6898a0;
-}
-
-/* Estilos para os botões de opção */
-input[type="radio"] {
-    margin-right: 5px;
-}
-
-.genderOptions {
-    display: flex; /* Alinha as opções lado a lado */
-    align-items: center; /* Alinha verticalmente no centro */
-    justify-content: center; /* Centraliza horizontalmente */
-}
-
-.genderOptions label {
-    display: inline-block;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 18px;
-}
-
-
-body {
-    padding-top: 150px; /* 108px (altura do header) + 10px (padding do header) */
-}
-
-#aboutUser {
-    height: 300px; /* Ajuste conforme necessário */
-}
-
+/* Estiliza os títulos h1 */
 h1 {
-    margin-bottom: -350px; /* Ajuste este valor conforme necessário */
+    margin-bottom: -350px; /* Desloca o h1 350px para cima, sobrepondo o conteúdo abaixo */
 }
 
 
-.custom-button {
-    font-size: 16px; /* Reduzido o tamanho da fonte */
-    align-items: center;
-    justify-content: center;
-    padding: 10px 20px;
-    background-color: #FFFBFC;
-    border: 2px solid #F2DCE4;
-    border-radius: 5px;
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-    width: max-content;
-    margin-left: auto; /* Isso alinhará o botão à direita */
-    margin-right: 0; /* Remova a margem direita para alinhar completamente à direita */
+
+
+/* Estiliza os botões de opção do formulário */
+input[type="radio"] {
+    margin-right: 5px; /* Adiciona uma margem à direita de cada botão de opção */
 }
 
-.custom-button:hover {
-    font-size: 16px; /* Reduzido o tamanho da fonte */
-    background-color: #F2DCE4;
-    font-size: 16px;
-    color: #FFFBFC;
-    font-weight: bold;
-    transition: 0.3s;
-    width: max-content;
-    margin-left: auto; /* Isso alinhará o botão à direita */
-    margin-right: 0; /* Remova a margem direita para alinhar completamente à direita */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+/* Estiliza o contêiner que contém as opções de gênero */
+.genderOptions {
+    display: flex; /* Usa o display flexível para alinhar os elementos filhos */
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
 }
 
+/* Estiliza os rótulos das opções de gênero */
+.genderOptions label {
+    display: inline-block; /* Faz com que os rótulos se comportem como blocos inline */
+    margin-left: 10px; /* Adiciona uma margem à esquerda de cada rótulo */
+    margin-right: 10px; /* Adiciona uma margem à direita de cada rótulo */
+    font-size: 18px; /* Define o tamanho da fonte para os rótulos */
+}
