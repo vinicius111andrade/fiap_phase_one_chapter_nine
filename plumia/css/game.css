@@ -1,64 +1,43 @@
-    body {
-        text-align: center;
-        flex-direction: column;
-        min-height: 100vh;
-        flex-direction: column;
-    }
-
-.content {
-    flex: 1 0 auto;
-    display: flex; /* Adicionado para tornar o contêiner um flex container */
-    flex-wrap: wrap; /* Permite que os itens se envolvam se necessário */
-    line-height: 0%;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-}
-
-.person {
+body {
     text-align: center;
-    margin-bottom: 10px; /* Adicionado para reduzir o espaço entre cada 'person' */
-    display: inline-block;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo na vertical */
+    align-items: center; /* Centraliza o conteúdo na horizontal */
 }
-
-.person_name {
-    text-decoration: none;
-    margin: 5px 0; /* Reduz o espaço acima e abaixo do nome */
-}
-
-
-
-.clickable_icon {
-    margin: 5px -10px; /* Reduz o espaço ao redor dos ícones */
-    width: 20px; /* Define a largura do ícone */
-    height: 20px; /* Define a altura do ícone */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
-.esquerda{
-    float: left;
+.instrucao-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.direita{
-    float: right;
+.pena-container {
+    display: flex;
+    align-items: center; /* Centraliza a pena verticalmente */
+    justify-content: flex-end; /* Alinha a pena à direita */
 }
-
 
 .sound-toggle {
     width: 30px;
     height: 30px;
     background-image: url('../images/mudo.png');
     cursor: pointer;
-    background-repeat: no-repeat;    /* Evita que a imagem de fundo se repita */
-
+    background-repeat: no-repeat;
+    align-self: flex-start; /* Alinha à esquerda */
+    margin-top: 10px; /* Espaço entre a instrução e o botão de mudo/volume */
 }
-
 
 .sound-toggle:hover {
     background-image: url('../images/volume.png');
-    width: 40px;
-    height: 40px;
-    background-repeat: no-repeat;    /* Evita que a imagem de fundo se repita */
-
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
 }
-
-
