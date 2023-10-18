@@ -3,15 +3,16 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centraliza o conteúdo na vertical */
-    align-items: center; /* Centraliza o conteúdo na horizontal */
-}
-.content {
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
+.content {
+    display: flex;
+    flex-direction: row; /* Mude para 'row' para colocar os filhos lado a lado */
+    align-items: center;
+    justify-content: center;
+}
 
 .instrucao-container {
     display: flex;
@@ -21,8 +22,7 @@ body {
 
 .pena-container {
     display: flex;
-    align-items: center; /* Centraliza a pena verticalmente */
-    justify-content: flex-end; /* Alinha a pena à direita */
+    justify-content: flex-end; /* Alinha o conteúdo à direita */
 }
 
 .sound-toggle {
@@ -31,8 +31,8 @@ body {
     background-image: url('../images/mudo.png');
     cursor: pointer;
     background-repeat: no-repeat;
-    align-self: flex-start; /* Alinha à esquerda */
-    margin-top: 10px; /* Espaço entre a instrução e o botão de mudo/volume */
+    align-self: flex-start;
+    margin-top: 10px;
 }
 
 .sound-toggle:hover {
