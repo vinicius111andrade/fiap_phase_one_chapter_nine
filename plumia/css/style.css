@@ -5,7 +5,7 @@
 body {
     background-color: #f8fdfe;
     font-family: 'Quicksand', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     margin: 0;
     padding: 0;
     display: flex;
@@ -37,7 +37,7 @@ h2, p {
 p {
     color: #181616;    /* Cor do texto */
     text-indent: 25px;    /* Indentação no início de cada parágrafo */
-    font-size: 25px;    /* Tamanho da fonte */
+    font-size: 20px;    /* Tamanho da fonte */
     margin: 64px;    /* Margens ao redor do parágrafo */
 }
 
@@ -85,8 +85,22 @@ header {
 
     position: absolute; /* Posicione o elemento menus absolutamente dentro do header */
     padding: -25px 30px; /* Ajuste o valor conforme necessário */
-    font-size: 20px;
+    font-size: 18px;
     right: 70px; /* Posicione no lado direito do header */
+    width: auto; /* Remova a largura de 100% */
+    height: 10px;
+    display: flex;
+    justify-content: flex-end; /* Alinhe o menu à direita */
+    align-items: center;
+}
+
+
+.logo {
+
+    position: absolute; /* Posicione o elemento menus absolutamente dentro do header */
+    padding: -25px 30px; /* Ajuste o valor conforme necessário */
+    font-size: 20px;
+    left: 20px; /* Posicione no lado direito do header */
     width: auto; /* Remova a largura de 100% */
     height: 70px;
     display: flex;
@@ -105,7 +119,8 @@ footer {
     width: 100%;    /* Largura total do rodapé */
     padding: 30px 0px;    /* Espaçamento interno para o rodapé */
     background: linear-gradient(to right, #E8FDFA, #F2DCE4);    /* Gradiente de cor de fundo para o rodapé */
-    max-height: 270px;    /* Altura máxima do rodapé */
+    max-height: 180px;    /* Altura máxima do rodapé */
+    font-size: 13px;
 }
 
 /* Estilos para os subtítulos <h4> e <h6> no rodapé */
@@ -130,7 +145,7 @@ footer_2 {
 
 .credits {
     margin-top: 0px;    /* Adiciona uma margem superior para separar do conteúdo acima */
-    font-size: 15px;
+    font-size: 12px;
     margin-bottom: 0;   /* Adiciona uma margem inferior à página */
 }
 
@@ -156,16 +171,15 @@ footer_2 {
 
 /* Estilização para os títulos .first_title, .second_title e .third_title na página inicial */
 .first_title {
-    margin-bottom: 80px;    /* Espaçamento abaixo do título */
-    font-size: 90px;    /* Tamanho da fonte */
+    font-size: 50px;    /* Tamanho da fonte */
     color: #B1B0D9;    /* Cor do texto */
-    line-height: 0%;    /* Espaçamento entre linhas */
+    line-height: 200%;    /* Espaçamento entre linhas */
 }
 
 .second_title {
-    font-size: 60px;    /* Tamanho da fonte */
+    font-size: 40px;    /* Tamanho da fonte */
     color: #7EADBF;    /* Cor do texto */
-    line-height: 200%;    /* Espaçamento entre linhas */
+    line-height: 100%;    /* Espaçamento entre linhas */
 }
 
 .third_title {
@@ -177,7 +191,7 @@ footer_2 {
 
 /* Estilização para os textos com a classe .intro_text */
 .intro_text {
-    font-size: 25px;    /* Tamanho da fonte */
+    font-size: 12px;    /* Tamanho da fonte */
     color: #181616;    /* Cor do texto */
     font-weight: bold;    /* Peso da fonte */
     line-height: 200%;    /* Espaçamento entre linhas */
